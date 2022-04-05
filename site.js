@@ -31,11 +31,12 @@ const vue_app = Vue.createApp({
       },
       data() {
         return {
-          title: “IMDB + Jack Kesil’s Top 8 Movies”,
-          owner: "Jack Kesil"
-          github: "https://github.com/kanyewestkanyewest/kesil-p",
+
             // This holds your movies.json data.
             movies: [],
+            title: "IMDB + Jack's Top 8 Movies",
+            owner: "Jack Kesil",
+            github: "https://github.com/kanyewestkanyewest/kesil-p",
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
       }
     },
