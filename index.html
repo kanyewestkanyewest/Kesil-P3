@@ -23,20 +23,11 @@
 </head>
 
   <body>
-	<div class="container">
+	<div class="container" id = "vue_app">
 
 	    <div class="header">
 
-	      <div class="container">
-	        <h1 id="app_title">title</h1>
-	      </div>
-
-	    </div>
-
-
-	    <div class="main">
-
-				<div class="container" id = "vue_app">
+	      <div class="container" >
 	        <h1 id="app_title">{{ title }}</h1>
 	      </div>
 
@@ -50,7 +41,7 @@
 	        <div class="col-md-6" v-for="(movie, index) in movies">
 	            <div class="thumbnail">
 
-						<img class="poster"  />
+						<img class="poster"  :src="movies[index].posters[0]"/>
 						<div class="imageInfo">{{ movies[0].posterIndex }}</div>
 
 						<p class="title">{{ movies[index].title }} {{ movies[index].country }}</p>
@@ -72,7 +63,7 @@
 	    <div class="footer">
 	      <div class="container">
 			<a id="github" class="btn btn-lg btn-warning">
-				<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i>{{%owner% %github%}}
+				<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i>{{ owner }} {{ github }}
 	  		</a>
 	      </div>
 	    </div>
